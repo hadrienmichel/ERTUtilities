@@ -1,2 +1,2 @@
 # ERTProtocolsCreator
-Creating ERT protocols for a given geometry
+In this repository, you will find different Python scripts to generate ERT protocols for given geometries
