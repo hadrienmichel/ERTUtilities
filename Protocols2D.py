@@ -1,4 +1,5 @@
 import numpy as np
+from Utilities import SaveArrayTXT
 
 def CreateDDN(nElec:int=64, nMax:int=6, parralelizeMin:int=None):
     '''This function creates a dipole-dipole array for an in-line measurement
@@ -23,7 +24,7 @@ def CreateDDN(nElec:int=64, nMax:int=6, parralelizeMin:int=None):
         if parralelizeMin > nMax:
             print('Impossible to measure more at least {} dipoles per injection with a maximum n factor of {}.'.format(parralelizeMin, nMax))
             parralelizeMin = nMax
-        uniqueAB, indexAB, countsAB = np.unique(array[:,:2], axis=0, return_index=True, return_counts=True)
+        uniqueAB, countsAB = np.unique(array[:,:2], axis=0, return_counts=True)
         valKeep = uniqueAB[countsAB==parralelizeMin]
         array = []
         for AB in valKeep:
