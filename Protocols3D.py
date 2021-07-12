@@ -1,7 +1,6 @@
 import numpy as np
-from numpy.core import multiarray
 from Protocols2D import CreateGradient, CreateDDN
-from Utilities import SaveArrayTXT, SortArray
+from Utilities import SampleReciprocals, SaveArrayTXT, SortArray
 from copy import deepcopy
 
 def CreateMultiLineGradient(nLines:int=4, nElecLine:int=32, s:int=7):
@@ -98,3 +97,7 @@ if __name__ == "__main__":
     print(multiFullTom)
     print('{} injections for the full array!'.format(len(np.unique(multiFullTom[:,:2], axis=0))))
     SaveArrayTXT('MultiTomFull.txt',multiFullTom)
+    RecipMultiFullTom = SampleReciprocals(multiFullTom, sampling=0.10)
+    print('Multiple methods array (Tom, case=3) (length = {}):'.format(len(RecipMultiFullTom)))
+    # print(RecipMultiFullTom)
+    SaveArrayTXT('MultiTomFullReciprocals.txt',RecipMultiFullTom)
