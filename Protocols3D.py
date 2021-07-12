@@ -97,3 +97,4 @@ if __name__ == "__main__":
     print('Multiple methods array (Tom, case=3) (length = {}):'.format(len(multiFullTom)))
     print(multiFullTom)
     print('{} injections for the full array!'.format(len(np.unique(multiFullTom[:,:2], axis=0))))
+    SaveArrayTXT('MultiTomFull.txt',multiFullTom)
