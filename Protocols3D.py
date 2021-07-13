@@ -1,6 +1,6 @@
 import numpy as np
 from Protocols2D import CreateGradient, CreateDDN
-from Utilities import SampleReciprocals, SaveArrayTXT, SortArray
+from Utilities import ArrayToXML, SampleReciprocals, SaveArrayTXT, SortArray
 from copy import deepcopy
 
 def CreateMultiLineGradient(nLines:int=4, nElecLine:int=32, s:int=7):
@@ -81,23 +81,26 @@ def CreateTom(testCase:int=0):
 if __name__ == "__main__":
     multiGradient = CreateMultiLineGradient()
     print('Default 4 lines Gradient array (length = {}):'.format(len(multiGradient)))
-    print(multiGradient)
+    # print(multiGradient)
     multiDDN = CreateMultiLineDDN()
     print('Default 4 lines DDN6 array (length = {}):'.format(len(multiDDN)))
-    print(multiDDN)
+    # print(multiDDN)
     # Testing Tom's protocols:
     multiTom1 = CreateTom(testCase=1)
     print('Multiple methods array (Tom, case=1) (length = {} - {} injections):'.format(len(multiTom1), len(np.unique(multiTom1[:,:2], axis=0))))
-    print(multiTom1)
+    # print(multiTom1)
     multiTom2 = CreateTom(testCase=2)
     print('Multiple methods array (Tom, case=2) (length = {} - {} injections):'.format(len(multiTom2), len(np.unique(multiTom2[:,:2], axis=0))))
-    print(multiTom2)
+    # print(multiTom2)
     multiFullTom = np.vstack([multiTom1, multiTom2])
     print('Multiple methods array (Tom, case=3) (length = {}):'.format(len(multiFullTom)))
-    print(multiFullTom)
+    # print(multiFullTom)
     print('{} injections for the full array!'.format(len(np.unique(multiFullTom[:,:2], axis=0))))
-    SaveArrayTXT('MultiTomFull.txt',multiFullTom)
-    RecipMultiFullTom = SampleReciprocals(multiFullTom, sampling=0.10)
+    # SaveArrayTXT('MultiTomFull.txt',multiFullTom)
+    RecipMultiFullTom = SampleReciprocals(multiFullTom, sampling=0.15)
     print('Multiple methods array (Tom, case=3) (length = {}):'.format(len(RecipMultiFullTom)))
     # print(RecipMultiFullTom)
-    SaveArrayTXT('MultiTomFullReciprocals.txt',RecipMultiFullTom)
+    # SaveArrayTXT('MultiTomFullReciprocals.txt',RecipMultiFullTom)
+    ArrayToXML(multiFullTom)
+    ArrayToXML(RecipMultiFullTom)
+    print('End of File . . .')
