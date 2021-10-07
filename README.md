@@ -1,5 +1,5 @@
 # ERTProtocolsCreator
-In this repository, you will find different Python scripts to generate ERT protocols for given geometries
+In this repository, you will find different Python scripts to generate ERT protocols for given geometries or process data originating from the ABME Terrameter (LS1 and LS2).
 
 # Create 2D arrays:
 They are two functions to create 2D arrays:
@@ -27,4 +27,9 @@ Creating the reciprocals array is done using:
 CreateReciprocals(array) # Full reciprocals
 SampleReciprocals(array, sampling) # Sampled injections for reciprocals
 ```
+
+# ExtractLines:
+Extract in-line measurements from a 3D array that has been measured using the ABEM Terrameter LS1 or LS2.
+
+Change the parameters atop the file and run the code to process the files.
 
