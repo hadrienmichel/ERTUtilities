@@ -1,5 +1,5 @@
 import numpy as np
-from Utilities import SaveArrayTXT
+from Utilities import SaveArrayTXT, ArrayToXML, SampleReciprocals
 
 def CreateDDN(nElec:int=64, nMax:int=6, parralelizeMin:int=None):
     '''This function creates a dipole-dipole array for an in-line measurement
@@ -18,7 +18,7 @@ def CreateDDN(nElec:int=64, nMax:int=6, parralelizeMin:int=None):
                 M = B + n*a 
                 N = M + a
                 if np.max([A, B, M, N]) <= nElec:
-                    array.append([A, B, M, N])
+                    array.append([B, A, M, N])
     array = np.asarray(array)
     if parralelizeMin is not None:
         if parralelizeMin > nMax:
@@ -33,7 +33,7 @@ def CreateDDN(nElec:int=64, nMax:int=6, parralelizeMin:int=None):
             for n in np.arange(start=1, stop = parralelizeMin+1):
                 M = B + n*a 
                 N = M + a 
-                array.append([A, B, M, N])
+                array.append([B, A, M, N])
         array = np.asarray(array)
     return array
 
@@ -62,8 +62,16 @@ if __name__=='__main__':
     nElec = 64
     DDNArray = CreateDDN(nMax = n, nElec = nElec, parralelizeMin=6)
     print('Default DDN6 array (length = {}):'.format(len(DDNArray)))
-    print(DDNArray)
+    #print(DDNArray)
+    ArrayToXML(DDNArray)
+    DDNArrayReciprocals = SampleReciprocals(DDNArray)
+    print('The corresponding DDN6 sampled reciprocal array (length = {}):'.format(len(DDNArrayReciprocals)))
+    ArrayToXML(DDNArrayReciprocals)
     s = 7
     GradientArray = CreateGradient(s = s, nElec = nElec)
     print('Default Gradient (s=7) array (length = {})'.format(len(GradientArray)))
-    print(GradientArray)
+    #print(GradientArray)
+    ArrayToXML(GradientArray)
+    GradientArrayReciprocals = SampleReciprocals(GradientArray)
+    print('The corresponding Gradient (s=7) sampled reciprocal array (length = {}):'.format(len(GradientArrayReciprocals)))
+    ArrayToXML(GradientArrayReciprocals)
