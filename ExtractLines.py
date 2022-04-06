@@ -45,7 +45,7 @@ def removeFaultyElectrode(db, coordRemove):
     print('{} points removed (out of {})'.format(nbPoints-len(db), nbPoints))
     return db
 
-def getLines(filename):
+def getLines(filename, IPWindows=False):
     headers = "Time	MeasID	DPID	Channel"
     endOfFile = "-----------------------"
     toFix = False
@@ -58,6 +58,7 @@ def getLines(filename):
                 print("The current file is broken. Trying to fix it")
         elif endOfFile in line:
             lineEnd = lineNb
+    file.close()
     if toFix:
         fileInit = open(filename,"r").readlines()
         lineToEdit = fileInit[lineHeaders]
