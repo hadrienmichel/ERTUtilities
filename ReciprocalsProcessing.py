@@ -191,7 +191,7 @@ for i in range(len(electrodes)):
     else:
         file.write('{}\t{}\t{}\n'.format(electrodes[i,0], electrodes[i,1], electrodes[i,2])) # x, y and z
 file.write('{}# Number of data\n'.format(len(dataset)))
-file.write('# a b m n rho err\n')
+file.write('# a b m n rho err ip ipErr\n')
 for i in range(len(dataset)):
-    file.write('{}\t{}\t{}\t{}\t{}\t{}\n'.format(*dataset[i,:]))
+    file.write('{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(*dataset[i,:]))
 file.close()

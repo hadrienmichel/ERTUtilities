@@ -16,6 +16,8 @@ pointsFinal = [[204515.856,	93219.782],
                [204504.901,	93094.259]]
 pointsFinal = np.array(pointsFinal)
 
+zShift = 0 # If the topography is relative, you can add to get to the actual altitude
+
 diffInit = pointsFinal[0,:]
 
 changeYZ = True # Change the y to the z axis (for 2D profiles)
@@ -38,6 +40,7 @@ for line in fileInit:
             posCurr[1], posCurr[2] = posCurr[2], posCurr[1]
         posFinal = posCurr
         posFinal[:2] = diffInit + np.matmul(posCurr[:2], transformMatrix[0])
+        posFinal[2] += zShift
         fileFinal.writelines(f'{posFinal[0]}\t{posFinal[1]}\t{posFinal[2]}\n')
     else:
         fileFinal.writelines(line)
