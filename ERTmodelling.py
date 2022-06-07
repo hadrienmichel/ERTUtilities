@@ -39,7 +39,7 @@ pg.show(plc, marker=True)
 # We have two markers here: 1: background 2: circle anomaly
 rhomap = [
     [1, 40],
-    [2, 1e7],
+    [2, 1e-6],
 ]
 
 # For visualization, map the rhomap into the actual mesh
