@@ -230,7 +230,7 @@ stdMisfit = np.zeros((nbBins,))
 for i in range(nbBins):
     currData = dataSet[(dataSet['R(Ohm)']>=bins[i]) & (dataSet['R(Ohm)']<bins[i+1])]
     misfits = np.array(currData['DCAmisfit'].to_list()).flatten()
-    stdMisfit[i] = np.mean(np.absolute(misfits - np.mean(misfits))) # np.std(misfits) # 
+    stdMisfit[i] = np.std(misfits) # np.mean(np.absolute(misfits - np.mean(misfits))) #  
 ax.plot(binsCenters, stdMisfit, 'dk')
 
 def errorIP(R, a, b):

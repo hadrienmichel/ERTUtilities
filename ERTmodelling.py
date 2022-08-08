@@ -14,13 +14,15 @@ scheme = ert.createERTData(
 ###############################################################################
 # Mesh generation
 world = mt.createWorld(
-    start=[-50, 0], end=[50, -30], worldMarker=True)
+    start=[-50, 0], end=[50, -15], layers=[-0.3, -2.0, -3.2, -9.80], worldMarker=True)
 
 anomaly = mt.createCircle(
-    pos=[0, -1.5], radius=0.2, marker=2
+    pos=[0, -1], radius=0.15, marker=6
 )
 
-plc = world + anomaly
+innerAnomaly = mt.createCircle(pos=[0,-1], radius=0.14, marker=7)
+
+plc = world + anomaly + innerAnomaly
 
 # local refinement of mesh near electrodes
 for s in scheme.sensors():
@@ -38,8 +40,13 @@ pg.show(plc, marker=True)
 # Prepare the model parameterization
 # We have two markers here: 1: background 2: circle anomaly
 rhomap = [
-    [1, 40],
-    [2, 1e-6],
+    [1, 100],
+    [2, 40],
+    [3, 250],
+    [4, 50],
+    [5, 400],
+    [6, 1e-1],
+    [7, 25]
 ]
 
 # For visualization, map the rhomap into the actual mesh
@@ -55,7 +62,7 @@ data = ert.simulate(
     res=rhomap,
     scheme=scheme,
     noiseAbs=0.0,
-    noiseLevel=0.03,
+    noiseLevel=0.05,
 )
 
 ###############################################################################
@@ -72,5 +79,6 @@ fig.tight_layout()
 mgr = ert.ERTManager(data)
 inv = mgr.invert()
 mgr.showResultAndFit()
+mgr.showResult()
 
 plt.show()

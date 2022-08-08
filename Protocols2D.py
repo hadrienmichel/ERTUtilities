@@ -18,7 +18,7 @@ def CreateDDN(nElec:int=64, nMax:int=6, parralelizeMin:int=None):
                 M = B + n*a 
                 N = M + a
                 if np.max([A, B, M, N]) <= nElec:
-                    array.append([B, A, M, N])
+                    array.append([A, B, N, M])
     array = np.asarray(array)
     if parralelizeMin is not None:
         if parralelizeMin > nMax:
@@ -33,7 +33,7 @@ def CreateDDN(nElec:int=64, nMax:int=6, parralelizeMin:int=None):
             for n in np.arange(start=1, stop = parralelizeMin+1):
                 M = B + n*a 
                 N = M + a 
-                array.append([B, A, M, N])
+                array.append([A, B, N, M])
         array = np.asarray(array)
     return array
 
