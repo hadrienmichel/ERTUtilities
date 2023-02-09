@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<Protocol>
+	<Name>GD32_SR</Name>
+	<Description>Sampled reciprocals gradient for a single line of 32 electrodes</Description>
+	<Arraycode>15</Arraycode>
+	<SpreadFile>A MODIFIER</SpreadFile>
+	<Sequence>
+		<Measure>
+			<Tx>2 3</Tx>
+			<Rx>1 11</Rx>
+		</Measure>
+		<Measure>
+			<Tx>8 10</Tx>
+			<Rx>2 22</Rx>
+			<Rx>4 24</Rx>
+			<Rx>6 26</Rx>
+		</Measure>
+		<Measure>
+			<Tx>14 16</Tx>
+			<Rx>2 22</Rx>
+			<Rx>4 24</Rx>
+			<Rx>6 26</Rx>
+			<Rx>8 28</Rx>
+			<Rx>10 30</Rx>
+			<Rx>12 32</Rx>
+		</Measure>
+		<Measure>
+			<Tx>15 16</Tx>
+			<Rx>7 17</Rx>
+			<Rx>8 18</Rx>
+			<Rx>9 19</Rx>
+			<Rx>10 20</Rx>
+			<Rx>11 21</Rx>
+			<Rx>12 22</Rx>
+			<Rx>13 23</Rx>
+			<Rx>14 24</Rx>
+		</Measure>
+		<Measure>
+			<Tx>16 19</Tx>
+			<Rx>1 31</Rx>
+		</Measure>
+		<Measure>
+			<Tx>17 18</Tx>
+			<Rx>9 19</Rx>
+			<Rx>10 20</Rx>
+			<Rx>11 21</Rx>
+			<Rx>12 22</Rx>
+			<Rx>13 23</Rx>
+			<Rx>14 24</Rx>
+			<Rx>15 25</Rx>
+			<Rx>16 26</Rx>
+		</Measure>
+		<Measure>
+			<Tx>20 21</Tx>
+			<Rx>12 22</Rx>
+			<Rx>13 23</Rx>
+			<Rx>14 24</Rx>
+			<Rx>15 25</Rx>
+			<Rx>16 26</Rx>
+			<Rx>17 27</Rx>
+			<Rx>18 28</Rx>
+			<Rx>19 29</Rx>
+		</Measure>
+		<Measure>
+			<Tx>21 23</Tx>
+			<Rx>5 25</Rx>
+			<Rx>7 27</Rx>
+			<Rx>9 29</Rx>
+			<Rx>11 31</Rx>
+		</Measure>
+		<Measure>
+			<Tx>28 30</Tx>
+			<Rx>12 32</Rx>
+		</Measure>
+		<Measure>
+			<Tx>29 30</Tx>
+			<Rx>21 31</Rx>
+			<Rx>22 32</Rx>
+		</Measure>
+	</Sequence>
+</Protocol>

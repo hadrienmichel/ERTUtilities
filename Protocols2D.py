@@ -37,7 +37,7 @@ def CreateDDN(nElec:int=64, nMax:int=6, parralelizeMin:int=None):
         array = np.asarray(array)
     return array
 
-def CreateGradient(nElec:int=64, s:int=7):
+def CreateGradient(nElec:int=32, s:int=8):
     '''This function creates a gradient array for an in-line measurement
     The input parameters are :
         - nElec: the number of electrodes in the line (default = 64)

@@ -1,0 +1,405 @@
+<?xml version="1.0" ?>
+<Protocol>
+	<Name>GD32</Name>
+	<Description>Gradient protocol for a single line of 32 electrodes</Description>
+	<Arraycode>15</Arraycode>
+	<SpreadFile>A MODIFIER</SpreadFile>
+	<Sequence>
+		<Measure>
+			<Tx>1 11</Tx>
+			<Rx>2 3</Rx>
+			<Rx>3 4</Rx>
+			<Rx>4 5</Rx>
+			<Rx>5 6</Rx>
+			<Rx>6 7</Rx>
+			<Rx>7 8</Rx>
+			<Rx>8 9</Rx>
+			<Rx>9 10</Rx>
+		</Measure>
+		<Measure>
+			<Tx>1 21</Tx>
+			<Rx>3 5</Rx>
+			<Rx>5 7</Rx>
+			<Rx>7 9</Rx>
+			<Rx>9 11</Rx>
+			<Rx>11 13</Rx>
+			<Rx>13 15</Rx>
+			<Rx>15 17</Rx>
+			<Rx>17 19</Rx>
+		</Measure>
+		<Measure>
+			<Tx>1 31</Tx>
+			<Rx>4 7</Rx>
+			<Rx>7 10</Rx>
+			<Rx>10 13</Rx>
+			<Rx>13 16</Rx>
+			<Rx>16 19</Rx>
+			<Rx>19 22</Rx>
+			<Rx>22 25</Rx>
+			<Rx>25 28</Rx>
+		</Measure>
+		<Measure>
+			<Tx>2 12</Tx>
+			<Rx>3 4</Rx>
+			<Rx>4 5</Rx>
+			<Rx>5 6</Rx>
+			<Rx>6 7</Rx>
+			<Rx>7 8</Rx>
+			<Rx>8 9</Rx>
+			<Rx>9 10</Rx>
+			<Rx>10 11</Rx>
+		</Measure>
+		<Measure>
+			<Tx>2 22</Tx>
+			<Rx>4 6</Rx>
+			<Rx>6 8</Rx>
+			<Rx>8 10</Rx>
+			<Rx>10 12</Rx>
+			<Rx>12 14</Rx>
+			<Rx>14 16</Rx>
+			<Rx>16 18</Rx>
+			<Rx>18 20</Rx>
+		</Measure>
+		<Measure>
+			<Tx>2 32</Tx>
+			<Rx>5 8</Rx>
+			<Rx>8 11</Rx>
+			<Rx>11 14</Rx>
+			<Rx>14 17</Rx>
+			<Rx>17 20</Rx>
+			<Rx>20 23</Rx>
+			<Rx>23 26</Rx>
+			<Rx>26 29</Rx>
+		</Measure>
+		<Measure>
+			<Tx>3 13</Tx>
+			<Rx>4 5</Rx>
+			<Rx>5 6</Rx>
+			<Rx>6 7</Rx>
+			<Rx>7 8</Rx>
+			<Rx>8 9</Rx>
+			<Rx>9 10</Rx>
+			<Rx>10 11</Rx>
+			<Rx>11 12</Rx>
+		</Measure>
+		<Measure>
+			<Tx>3 23</Tx>
+			<Rx>5 7</Rx>
+			<Rx>7 9</Rx>
+			<Rx>9 11</Rx>
+			<Rx>11 13</Rx>
+			<Rx>13 15</Rx>
+			<Rx>15 17</Rx>
+			<Rx>17 19</Rx>
+			<Rx>19 21</Rx>
+		</Measure>
+		<Measure>
+			<Tx>4 14</Tx>
+			<Rx>5 6</Rx>
+			<Rx>6 7</Rx>
+			<Rx>7 8</Rx>
+			<Rx>8 9</Rx>
+			<Rx>9 10</Rx>
+			<Rx>10 11</Rx>
+			<Rx>11 12</Rx>
+			<Rx>12 13</Rx>
+		</Measure>
+		<Measure>
+			<Tx>4 24</Tx>
+			<Rx>6 8</Rx>
+			<Rx>8 10</Rx>
+			<Rx>10 12</Rx>
+			<Rx>12 14</Rx>
+			<Rx>14 16</Rx>
+			<Rx>16 18</Rx>
+			<Rx>18 20</Rx>
+			<Rx>20 22</Rx>
+		</Measure>
+		<Measure>
+			<Tx>5 15</Tx>
+			<Rx>6 7</Rx>
+			<Rx>7 8</Rx>
+			<Rx>8 9</Rx>
+			<Rx>9 10</Rx>
+			<Rx>10 11</Rx>
+			<Rx>11 12</Rx>
+			<Rx>12 13</Rx>
+			<Rx>13 14</Rx>
+		</Measure>
+		<Measure>
+			<Tx>5 25</Tx>
+			<Rx>7 9</Rx>
+			<Rx>9 11</Rx>
+			<Rx>11 13</Rx>
+			<Rx>13 15</Rx>
+			<Rx>15 17</Rx>
+			<Rx>17 19</Rx>
+			<Rx>19 21</Rx>
+			<Rx>21 23</Rx>
+		</Measure>
+		<Measure>
+			<Tx>6 16</Tx>
+			<Rx>7 8</Rx>
+			<Rx>8 9</Rx>
+			<Rx>9 10</Rx>
+			<Rx>10 11</Rx>
+			<Rx>11 12</Rx>
+			<Rx>12 13</Rx>
+			<Rx>13 14</Rx>
+			<Rx>14 15</Rx>
+		</Measure>
+		<Measure>
+			<Tx>6 26</Tx>
+			<Rx>8 10</Rx>
+			<Rx>10 12</Rx>
+			<Rx>12 14</Rx>
+			<Rx>14 16</Rx>
+			<Rx>16 18</Rx>
+			<Rx>18 20</Rx>
+			<Rx>20 22</Rx>
+			<Rx>22 24</Rx>
+		</Measure>
+		<Measure>
+			<Tx>7 17</Tx>
+			<Rx>8 9</Rx>
+			<Rx>9 10</Rx>
+			<Rx>10 11</Rx>
+			<Rx>11 12</Rx>
+			<Rx>12 13</Rx>
+			<Rx>13 14</Rx>
+			<Rx>14 15</Rx>
+			<Rx>15 16</Rx>
+		</Measure>
+		<Measure>
+			<Tx>7 27</Tx>
+			<Rx>9 11</Rx>
+			<Rx>11 13</Rx>
+			<Rx>13 15</Rx>
+			<Rx>15 17</Rx>
+			<Rx>17 19</Rx>
+			<Rx>19 21</Rx>
+			<Rx>21 23</Rx>
+			<Rx>23 25</Rx>
+		</Measure>
+		<Measure>
+			<Tx>8 18</Tx>
+			<Rx>9 10</Rx>
+			<Rx>10 11</Rx>
+			<Rx>11 12</Rx>
+			<Rx>12 13</Rx>
+			<Rx>13 14</Rx>
+			<Rx>14 15</Rx>
+			<Rx>15 16</Rx>
+			<Rx>16 17</Rx>
+		</Measure>
+		<Measure>
+			<Tx>8 28</Tx>
+			<Rx>10 12</Rx>
+			<Rx>12 14</Rx>
+			<Rx>14 16</Rx>
+			<Rx>16 18</Rx>
+			<Rx>18 20</Rx>
+			<Rx>20 22</Rx>
+			<Rx>22 24</Rx>
+			<Rx>24 26</Rx>
+		</Measure>
+		<Measure>
+			<Tx>9 19</Tx>
+			<Rx>10 11</Rx>
+			<Rx>11 12</Rx>
+			<Rx>12 13</Rx>
+			<Rx>13 14</Rx>
+			<Rx>14 15</Rx>
+			<Rx>15 16</Rx>
+			<Rx>16 17</Rx>
+			<Rx>17 18</Rx>
+		</Measure>
+		<Measure>
+			<Tx>9 29</Tx>
+			<Rx>11 13</Rx>
+			<Rx>13 15</Rx>
+			<Rx>15 17</Rx>
+			<Rx>17 19</Rx>
+			<Rx>19 21</Rx>
+			<Rx>21 23</Rx>
+			<Rx>23 25</Rx>
+			<Rx>25 27</Rx>
+		</Measure>
+		<Measure>
+			<Tx>10 20</Tx>
+			<Rx>11 12</Rx>
+			<Rx>12 13</Rx>
+			<Rx>13 14</Rx>
+			<Rx>14 15</Rx>
+			<Rx>15 16</Rx>
+			<Rx>16 17</Rx>
+			<Rx>17 18</Rx>
+			<Rx>18 19</Rx>
+		</Measure>
+		<Measure>
+			<Tx>10 30</Tx>
+			<Rx>12 14</Rx>
+			<Rx>14 16</Rx>
+			<Rx>16 18</Rx>
+			<Rx>18 20</Rx>
+			<Rx>20 22</Rx>
+			<Rx>22 24</Rx>
+			<Rx>24 26</Rx>
+			<Rx>26 28</Rx>
+		</Measure>
+		<Measure>
+			<Tx>11 21</Tx>
+			<Rx>12 13</Rx>
+			<Rx>13 14</Rx>
+			<Rx>14 15</Rx>
+			<Rx>15 16</Rx>
+			<Rx>16 17</Rx>
+			<Rx>17 18</Rx>
+			<Rx>18 19</Rx>
+			<Rx>19 20</Rx>
+		</Measure>
+		<Measure>
+			<Tx>11 31</Tx>
+			<Rx>13 15</Rx>
+			<Rx>15 17</Rx>
+			<Rx>17 19</Rx>
+			<Rx>19 21</Rx>
+			<Rx>21 23</Rx>
+			<Rx>23 25</Rx>
+			<Rx>25 27</Rx>
+			<Rx>27 29</Rx>
+		</Measure>
+		<Measure>
+			<Tx>12 22</Tx>
+			<Rx>13 14</Rx>
+			<Rx>14 15</Rx>
+			<Rx>15 16</Rx>
+			<Rx>16 17</Rx>
+			<Rx>17 18</Rx>
+			<Rx>18 19</Rx>
+			<Rx>19 20</Rx>
+			<Rx>20 21</Rx>
+		</Measure>
+		<Measure>
+			<Tx>12 32</Tx>
+			<Rx>14 16</Rx>
+			<Rx>16 18</Rx>
+			<Rx>18 20</Rx>
+			<Rx>20 22</Rx>
+			<Rx>22 24</Rx>
+			<Rx>24 26</Rx>
+			<Rx>26 28</Rx>
+			<Rx>28 30</Rx>
+		</Measure>
+		<Measure>
+			<Tx>13 23</Tx>
+			<Rx>14 15</Rx>
+			<Rx>15 16</Rx>
+			<Rx>16 17</Rx>
+			<Rx>17 18</Rx>
+			<Rx>18 19</Rx>
+			<Rx>19 20</Rx>
+			<Rx>20 21</Rx>
+			<Rx>21 22</Rx>
+		</Measure>
+		<Measure>
+			<Tx>14 24</Tx>
+			<Rx>15 16</Rx>
+			<Rx>16 17</Rx>
+			<Rx>17 18</Rx>
+			<Rx>18 19</Rx>
+			<Rx>19 20</Rx>
+			<Rx>20 21</Rx>
+			<Rx>21 22</Rx>
+			<Rx>22 23</Rx>
+		</Measure>
+		<Measure>
+			<Tx>15 25</Tx>
+			<Rx>16 17</Rx>
+			<Rx>17 18</Rx>
+			<Rx>18 19</Rx>
+			<Rx>19 20</Rx>
+			<Rx>20 21</Rx>
+			<Rx>21 22</Rx>
+			<Rx>22 23</Rx>
+			<Rx>23 24</Rx>
+		</Measure>
+		<Measure>
+			<Tx>16 26</Tx>
+			<Rx>17 18</Rx>
+			<Rx>18 19</Rx>
+			<Rx>19 20</Rx>
+			<Rx>20 21</Rx>
+			<Rx>21 22</Rx>
+			<Rx>22 23</Rx>
+			<Rx>23 24</Rx>
+			<Rx>24 25</Rx>
+		</Measure>
+		<Measure>
+			<Tx>17 27</Tx>
+			<Rx>18 19</Rx>
+			<Rx>19 20</Rx>
+			<Rx>20 21</Rx>
+			<Rx>21 22</Rx>
+			<Rx>22 23</Rx>
+			<Rx>23 24</Rx>
+			<Rx>24 25</Rx>
+			<Rx>25 26</Rx>
+		</Measure>
+		<Measure>
+			<Tx>18 28</Tx>
+			<Rx>19 20</Rx>
+			<Rx>20 21</Rx>
+			<Rx>21 22</Rx>
+			<Rx>22 23</Rx>
+			<Rx>23 24</Rx>
+			<Rx>24 25</Rx>
+			<Rx>25 26</Rx>
+			<Rx>26 27</Rx>
+		</Measure>
+		<Measure>
+			<Tx>19 29</Tx>
+			<Rx>20 21</Rx>
+			<Rx>21 22</Rx>
+			<Rx>22 23</Rx>
+			<Rx>23 24</Rx>
+			<Rx>24 25</Rx>
+			<Rx>25 26</Rx>
+			<Rx>26 27</Rx>
+			<Rx>27 28</Rx>
+		</Measure>
+		<Measure>
+			<Tx>20 30</Tx>
+			<Rx>21 22</Rx>
+			<Rx>22 23</Rx>
+			<Rx>23 24</Rx>
+			<Rx>24 25</Rx>
+			<Rx>25 26</Rx>
+			<Rx>26 27</Rx>
+			<Rx>27 28</Rx>
+			<Rx>28 29</Rx>
+		</Measure>
+		<Measure>
+			<Tx>21 31</Tx>
+			<Rx>22 23</Rx>
+			<Rx>23 24</Rx>
+			<Rx>24 25</Rx>
+			<Rx>25 26</Rx>
+			<Rx>26 27</Rx>
+			<Rx>27 28</Rx>
+			<Rx>28 29</Rx>
+			<Rx>29 30</Rx>
+		</Measure>
+		<Measure>
+			<Tx>22 32</Tx>
+			<Rx>23 24</Rx>
+			<Rx>24 25</Rx>
+			<Rx>25 26</Rx>
+			<Rx>26 27</Rx>
+			<Rx>27 28</Rx>
+			<Rx>28 29</Rx>
+			<Rx>29 30</Rx>
+			<Rx>30 31</Rx>
+		</Measure>
+	</Sequence>
+</Protocol>

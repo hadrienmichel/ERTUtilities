@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<Protocol>
+	<Name/>
+	<Description/>
+	<Arraycode>15</Arraycode>
+	<SpreadFile/>
+	<Sequence>
+		<Measure>
+			<Tx>102 103</Tx>
+			<Rx>97 106</Rx>
+			<Rx>98 107</Rx>
+			<Rx>99 108</Rx>
+			<Rx>100 109</Rx>
+			<Rx>101 110</Rx>
+		</Measure>
+		<Measure>
+			<Tx>102 104</Tx>
+			<Rx>98 116</Rx>
+			<Rx>100 118</Rx>
+		</Measure>
+		<Measure>
+			<Tx>109 110</Tx>
+			<Rx>102 111</Rx>
+			<Rx>103 112</Rx>
+			<Rx>104 113</Rx>
+			<Rx>105 114</Rx>
+			<Rx>106 115</Rx>
+			<Rx>107 116</Rx>
+			<Rx>108 117</Rx>
+		</Measure>
+		<Measure>
+			<Tx>109 112</Tx>
+			<Rx>97 124</Rx>
+			<Rx>100 127</Rx>
+		</Measure>
+		<Measure>
+			<Tx>113 116</Tx>
+			<Rx>98 125</Rx>
+			<Rx>101 128</Rx>
+		</Measure>
+		<Measure>
+			<Tx>120 123</Tx>
+			<Rx>99 126</Rx>
+		</Measure>
+		<Measure>
+			<Tx>123 125</Tx>
+			<Rx>109 127</Rx>
+		</Measure>
+	</Sequence>
+</Protocol>

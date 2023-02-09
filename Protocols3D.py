@@ -3,7 +3,7 @@ from Protocols2D import CreateGradient, CreateDDN
 from Utilities import ArrayToXML, SampleReciprocals, SaveArrayTXT, SortArray
 from copy import deepcopy
 
-def CreateMultiLineGradient(nLines:int=4, nElecLine:int=32, s:int=7):
+def CreateMultiLineGradient(nLines:int=1, nElecLine:int=32, s:int=8):
     simpleGradient = CreateGradient(nElec = nElecLine, s = s)
     multiGradient = np.asarray([0, 0, 0, 0])
     for lineInj in range(nLines):
@@ -80,7 +80,7 @@ def CreateTom(testCase:int=0):
 
 if __name__ == "__main__":
     multiGradient = CreateMultiLineGradient()
-    print('Default 4 lines Gradient array (length = {}):'.format(len(multiGradient)))
+    print('Default 2 lines Gradient array (length = {}):'.format(len(multiGradient)))
     # print(multiGradient)
     multiDDN = CreateMultiLineDDN()
     print('Default 4 lines DDN6 array (length = {}):'.format(len(multiDDN)))
@@ -97,10 +97,10 @@ if __name__ == "__main__":
     # print(multiFullTom)
     print('{} injections for the full array!'.format(len(np.unique(multiFullTom[:,:2], axis=0))))
     # SaveArrayTXT('MultiTomFull.txt',multiFullTom)
-    RecipMultiFullTom = SampleReciprocals(multiFullTom, sampling=0.15)
+    RecipMultiFullTom = SampleReciprocals(multiGradient, sampling=0.15)
     print('Multiple methods array (Tom, case=3) (length = {}):'.format(len(RecipMultiFullTom)))
     # print(RecipMultiFullTom)
     # SaveArrayTXT('MultiTomFullReciprocals.txt',RecipMultiFullTom)
-    ArrayToXML(multiFullTom)
-    ArrayToXML(RecipMultiFullTom)
+    ArrayToXML(multiGradient)
+    #ArrayToXML(RecipMultiFullTom)
     print('End of File . . .')
