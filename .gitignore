@@ -1,0 +1,8 @@
+__pycache__/
+*.xml
+HBHData/
+*.vector
+*.bms
+*.vtk
+*.vec
+AgatheData/
